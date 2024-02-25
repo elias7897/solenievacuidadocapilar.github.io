@@ -1,0 +1,58 @@
+/* Estilos CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: darkmagenta;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    background-color: pink; /* Cambia el color de fondo a rosa */
+    color: white; /* Cambia el color del texto a blanco */
+    padding: 10px; /* Añade un poco de espacio alrededor del texto */
+    border-radius: 5px; /* Añade esquinas redondeadas al fondo */
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: deeppink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el tamaño de las columnas automáticamente */
+    grid-gap: 20px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.grid-item {
+    text-align: center;
+    border: 1px solid rgb(179, 130, 139); /* Añade un borde a cada elemento */
+    padding: 10px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Añade esquinas redondeadas a las imágenes */
+}
+
+.grid-item p {
+    margin: 10px 0; /* Añade un poco de espacio entre los párrafos */
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
+.grid-item img:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% cuando se pasa el cursor sobre ella */
+}
+
